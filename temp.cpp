@@ -2,6 +2,7 @@
 using namespace std;
 int main() {
     //hehe
+    //haider shah
     int a[3][3], b[3][3], c[3][3];
     cout << "Enter the first matrix: ";
     for (int i = 0; i < 3; i++) {
