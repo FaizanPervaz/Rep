@@ -5,6 +5,8 @@
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 #define DEFAULT_CORE_ID 0 
 
+//Ashraf 
+
 int desiredCoreId = DEFAULT_CORE_ID;
 
 void setAffinity(pthread_t thread, int coreId) {
