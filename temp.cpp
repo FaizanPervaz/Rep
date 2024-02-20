@@ -1,48 +1,37 @@
 #include <iostream>
-using namespace std;
+
+// Function to add two numbers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function to subtract two numbers
+int subtract(int a, int b) {
+    return a - b;
+}
+
+// Function to multiply two numbers
+int multiply(int a, int b) {
+    return a * b;
+}
+
+// Function to divide two numbers
+float divide(int a, int b) {
+    if (b != 0)
+        return static_cast<float>(a) / b;
+    else {
+        std::cerr << "Error: Division by zero!" << std::endl;
+        return 0.0f;
+    }
+}
+
 int main() {
-    //Faizan Pervaz
-    int a[3][3], b[3][3], c[3][3];
-    cout << "Enter the first matrix: ";
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cin >> a[i][j];
-        }
-    }
-    cout << "Enter the second matrix: ";
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cin >> b[i][j];
-        }
-    }
-    cout << "The first matrix is: " << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << a[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << "The second matrix is: " << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << b[i][j] << " ";
-        }
-        cout << endl;
-    }
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            c[i][j] = 0;
-            for (int k = 0; k < 3; k++) {
-                c[i][j] += a[i][k] * b[k][j];
-            }
-        }
-    }
-    cout << "The resultant matrix is: " << endl;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << c[i][j] << " ";
-        }
-        cout << endl;
-    }
+    int x = 10, y = 5;
+    
+    std::cout << "Addition: " << add(x, y) << std::endl;
+    std::cout << "Subtraction: " << subtract(x, y) << std::endl;
+    std::cout << "Multiplication: " << multiply(x, y) << std::endl;
+    std::cout << "Division: " << divide(x, y) << std::endl;
+
     return 0;
 }
