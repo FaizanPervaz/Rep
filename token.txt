@@ -1,3 +1,1 @@
-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
 
-git remote add origin https://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@github.com/FaizanPervaz/Rep
