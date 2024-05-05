@@ -33,7 +33,7 @@ pipeline {
         always {
             // Cleanup after the build
             dir('build') {
-                // Clean up build artifacts
+                // Clean up build artifacts lolo
                 sh 'make clean'
             }
         }
