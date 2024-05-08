@@ -1,5 +1,11 @@
 #include <gtest/gtest.h>
 
+
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+float divide(int a, int b);
+
 // Test cases for add function
 TEST(AddTest, PositiveNumbers) {
     EXPECT_EQ(add(3, 5), 8);
