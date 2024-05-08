@@ -11,7 +11,11 @@ TEST(Task1, TestCase2) {
     int b = 3;
     EXPECT_EQ(add(a, b), -2);
 }
-
+TEST(Task1, TestCase3) {
+    int a = 0;
+    int b = 4;
+    EXPECT_EQ(add(a, b), 4);
+}
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
