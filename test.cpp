@@ -1,19 +1,30 @@
-#include<gtest/gtest.h>
+#include <gtest/gtest.h>
 
-TEST(Task1, TestCase1) {
-    int a = 5;
-    int b = 3;
-    EXPECT_EQ(add(a, b), 8);
+// Test cases for add function
+TEST(AddTest, PositiveNumbers) {
+    EXPECT_EQ(add(3, 5), 8);
+    EXPECT_EQ(add(-3, 5), 2);
 }
 
-TEST(Task1, TestCase2) {
-    int a = -5;
-    int b = 3;
-    EXPECT_EQ(add(a, b), -2);
+// Test cases for subtract function
+TEST(SubtractTest, PositiveNumbers) {
+    EXPECT_EQ(subtract(8, 5), 3);
+    EXPECT_EQ(subtract(5, 8), -3);
 }
 
-TEST(Task1, TestCase3) {
-    int a = 0;
-    int b = 4;
-    EXPECT_EQ(add(a, b), 4);
+// Test cases for multiply function
+TEST(MultiplyTest, PositiveNumbers) {
+    EXPECT_EQ(multiply(3, 5), 15);
+    EXPECT_EQ(multiply(-3, 5), -15);
+}
+
+// Test cases for divide function
+TEST(DivideTest, PositiveNumbers) {
+    EXPECT_FLOAT_EQ(divide(10, 5), 2.0f);
+    EXPECT_FLOAT_EQ(divide(5, 2), 2.5f);
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
