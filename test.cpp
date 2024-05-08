@@ -1,10 +1,22 @@
 #include <gtest/gtest.h>
 
 
-int add(int a, int b);
-int subtract(int a, int b);
-int multiply(int a, int b);
-float divide(int a, int b);
+// Function declarations
+int add(int a, int b) {
+    return a + b;
+}
+
+int subtract(int a, int b) {
+    return a - b;
+}
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+float divide(int a, int b) {
+    return static_cast<float>(a) / b;
+}
 
 // Test cases for add function
 TEST(AddTest, PositiveNumbers) {
