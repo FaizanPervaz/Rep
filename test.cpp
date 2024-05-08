@@ -4,7 +4,7 @@
 TEST(Task1, TestCase1) {
     int a = 5;
     int b = 3;
-    EXPECT_EQ(add(5, 3), 8);
+    EXPECT_EQ(add(a, b), 8);
 }
 
 int main(int argc, char **argv) {
