@@ -12,7 +12,7 @@ TEST(Task1, TestCase2) {
     EXPECT_EQ(add(a, b), -2);
 }
 TEST(Task1, TestCase3) {
-    int a = 0;
+    int a = 2;
     int b = 4;
     EXPECT_EQ(add(a, b), 4);
 }
