@@ -1,6 +1,6 @@
 #include<iostream>
 
-// New comment cause why not
+// New comment cause why not ////
 
 
 // Function to add two numbers
