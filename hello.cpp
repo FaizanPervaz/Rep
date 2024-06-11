@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-//  some comment //////
+//  some comment ///////////
 class Rectangle {
 private:
     double length;
