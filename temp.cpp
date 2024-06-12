@@ -1,7 +1,6 @@
 #include<iostream>
 
-// New comment cause why not /////////////
-
+//Hello New Commit 
 
 // Function to add two numbers
 int add(int a, int b) {
